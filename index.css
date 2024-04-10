@@ -1,0 +1,153 @@
+html {
+    background-color:#f9eaed;
+    font-family: MotivaSansThin;
+}
+
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+}
+
+body {
+    margin: 2%;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    margin: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+article {
+    display: flex;
+    margin: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+h2 {
+    margin: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 30px;
+}
+
+/* logo */
+
+.logo {
+    width: 300px;    
+}
+
+.item {
+    padding: 1%;
+    padding-left: 0;
+}
+
+/* Caja productos */
+
+.caja-productos {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap; 
+    width: auto;
+}
+
+/* perfume */
+.perfume {
+    width: 250px;
+    height: 250px;
+}
+
+.bolso {
+    width: 250px;
+    height: 350px;
+}
+
+/* wsp */
+.wsp {
+    width: 20px;
+}
+
+/* link */
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: pink;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+
+/* item : hover */
+
+.detalle:hover {
+    border: black;
+}
+
+@media (max-width: 1100px){
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        margin: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .logo {
+        width: 210px;
+        height: 250px;    
+    }
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .mision {
+        font-size: 13px;
+    }
+    .caja-productos {
+        display:block;
+        flex-direction: row;
+        flex-wrap: ;
+        width: auto;
+    }
+    
+    .perfume {
+        width: 190px;
+        height: 190px;
+    }
+
+    .bolso {
+        width: 190px;
+        height: 290px;
+    }
+    
+    /* imagen izquierda y detalle derecha*/
+    .item {
+        display: flex;
+    }
+
+    .detalle>p{
+        padding: 5%;
+        justify-content: center;
+        text-align: left;
+    }
+
+}
